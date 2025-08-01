@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LamGia's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="home-container">
+            <div class="home-content">
+                <h3 class="greeting animate-text">
+                    <span class="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </h3>
+                <h1 class="name animate-text">Hi, I'm <span class="highlight">Lam Gia</span></h1>
+                <h2 class="role animate-text-delay">Back-End Developer</h2>
+                <p class="bio animate-text-delay">Passionate about creating efficient and scalable backend solutions with expertise in Java, Spring Boot, and database management.</p>
+                
+                <div class="social-links animate-text-delay">
+                    <a href="https://www.facebook.com/lamgia20" class="social-link glow-effect" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/lam.luonggia/" class="social-link glow-effect" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/LGL-aml" class="social-link glow-effect" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                
+                <a href="#about" class="cta-button glow-effect animate-text-delay">More About Me</a>
+            </div>
+            <div class="profile-container animate-text">
+                <div class="profile-image">
+                    <img src="imgSrc/me2.png" alt="Lam Gia">
+                </div>
+                <div class="profile-ring"></div>
+                <div class="profile-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="section-title">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-container">
+            <div class="about-image-container" data-aos="fade-right">
+                <div class="about-image">
+                    <img src="imgSrc/avtlg.png" alt="About Me">
+                </div>
+                <div class="image-shape"></div>
+            </div>
+            
+            <div class="about-content" data-aos="fade-left" data-aos-delay="200">
+                <div class="about-text-container">
+                    <div class="about-card">
+                        <h3 class="about-subtitle">Who am I?</h3>
+                        <p class="about-description">
+                            A passionate Back-End Developer with a strong foundation in software engineering and a love for creating efficient, scalable solutions. I believe in writing clean code and implementing best practices to deliver high-quality applications.
+                        </p>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                            <span class="stat-number">3.2</span>
+                            <span class="stat-label">GPA</span>
+                        </div>
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Academic Projects</span>
+                        </div>
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+
+                    <div class="about-details">
+                        <div class="detail-item" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="detail-content">
+                                <h4>Education</h4>
+                                <p>Software Engineering student at FPT University</p>
+                            </div>
+                        </div>
+                        <div class="detail-item" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-briefcase"></i>
+                            <div class="detail-content">
+                                <h4>Current Role</h4>
+                                <p>Back-End Developer</p>
+                            </div>
+                        </div>
+                        <div class="detail-item" data-aos="fade-up" data-aos-delay="500">
+                            <i class="fas fa-code"></i>
+                            <div class="detail-content">
+                                <h4>Expertise</h4>
+                                <p>Java, Spring Boot, RESTful APIs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-buttons">
+                        <a href="#contact" class="cta-button about-cta">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-items">
+                    <div class="skill-item"><i class="fas fa-code"></i>C</div>
+                    <div class="skill-item"><i class="fab fa-java"></i>Java</div>
+                    <div class="skill-item"><i class="fab fa-js"></i>JavaScript</div>
+                    <div class="skill-item"><i class="fab fa-html5"></i>HTML5</div>
+                    <div class="skill-item"><i class="fab fa-css3-alt"></i>CSS3</div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Frameworks</h3>
+                <div class="skill-items">
+                    <div class="skill-item"><i class="fas fa-leaf"></i>Spring Boot</div>
+                    <div class="skill-item"><i class="fab fa-react"></i>React</div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Database</h3>
+                <div class="skill-items">
+                    <div class="skill-item"><i class="fas fa-database"></i>MySQL</div>
+                    <div class="skill-item"><i class="fas fa-server"></i>SQL Server</div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Other</h3>
+                <div class="skill-items">
+                    <div class="skill-item"><i class="fas fa-network-wired"></i>RESTful API</div>
+                    <div class="skill-item"><i class="fab fa-github"></i>GitHub</div>
+                    <div class="skill-item"><i class="fas fa-paper-plane"></i>Postman</div>
+                    <div class="skill-item"><i class="fas fa-file-code"></i>Swagger</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="section-title">
+            <h2>Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="imgSrc/dupssImg.png" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>Drug Use Prevention Support System</h3>
+                    
+                    <div class="project-details">
+                        <div class="project-detail-item">
+                            <div class="project-detail-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <div class="project-detail-title">Description</div>
+                                <div class="project-detail-text">A web-based system supporting drug prevention in the community through online courses, risk assessments, and expert consultations</div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-detail-item">
+                            <div class="project-detail-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <div class="project-detail-title">Role</div>
+                                <div class="project-detail-text">Back-End Developer & Project Lead</div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-detail-item">
+                            <div class="project-detail-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <div class="project-detail-title">Tech Stack</div>
+                                <div class="project-detail-text">React, Spring Boot, MySQL, RESTful APIs, JWT Authentication</div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-detail-item">
+                            <div class="project-detail-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <div class="project-detail-title">Purpose</div>
+                                <div class="project-detail-text">Provide an educational platform for drug prevention and support community health initiatives</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://dupssapp.id.vn" class="project-link view-project" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                        <a href="https://github.com/LGL-aml/DUPSS-SWP391" class="project-link github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="imgSrc/course_cover.png" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3>Code Learn</h3>
+                    
+                    <div class="project-details">
+                        <div class="project-detail-item">
+                            <div class="project-detail-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <div class="project-detail-title">Description</div>
+                                <div class="project-detail-text">A web platform offering free programming courses through video lessons and certification features.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-detail-item">
+                            <div class="project-detail-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <div class="project-detail-title">Role</div>
+                                <div class="project-detail-text">Backend Developer</div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-detail-item">
+                            <div class="project-detail-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <div class="project-detail-title">Tech Stack</div>
+                                <div class="project-detail-text">React, Spring Boot, MySQL, RESTful APIs, JWT Authentication</div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-detail-item">
+                            <div class="project-detail-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <div class="project-detail-title">Purpose</div>
+                                <div class="project-detail-text">To provide free, beginner-friendly programming courses through video lessons and certifications.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/LGL-aml/CodeLearnApp" class="project-link view-project" target="_blank"> 
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                        <a href="https://github.com/LGL-aml/CodeLearnApp" class="project-link github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="imgSrc/ledbluetooth.png" alt="Project 3">
+                </div>
+                <div class="project-info">
+                    <h3>Bluetooth-Controlled RGB LED Strip</h3>
+                    
+                    <div class="project-details">
+                        <div class="project-detail-item">
+                            <div class="project-detail-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <div class="project-detail-title">Description</div>
+                                <div class="project-detail-text">A Bluetooth-controlled RGB LED system that reacts to sound and light intensity, allowing users to customize lighting effects in real time via a mobile app.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-detail-item">
+                            <div class="project-detail-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <div class="project-detail-title">Role</div>
+                                <div class="project-detail-text">IoT Developer & System Architect</div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-detail-item">
+                            <div class="project-detail-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <div class="project-detail-title">Tech Stack</div>
+                                <div class="project-detail-text">Arduino, Bluetooth Module HC-05, MIT App, RGB LED Strip</div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-detail-item">
+                            <div class="project-detail-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <div class="project-detail-title">Purpose</div>
+                                <div class="project-detail-text">Create a smart lighting system controlled via mobile app with custom color patterns and animations</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://www.youtube.com/watch?v=1bQMfavB2wk" class="project-link view-project" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                        <a href="https://github.com/LGL-aml/Bluetooth-Controlled-RGB-LED-Strip" class="project-link github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="certificates-section">
+        <div class="section-title">
+            <h2>Achievements & Certificates</h2>
+        </div>
+        <div class="certificates-container">
+            <div class="certificate-card" data-aos="fade-up">
+                <div class="certificate-image">
+                    <img src="imgSrc/hst.png" alt="Certificate 1">
+                    <div class="certificate-overlay">
+                        <a href="#" class="view-certificate">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="certificate-content">
+                    <h3>Honorable Student</h3>
+                    <p>Honorable Student Of Trimester 2025 Spring</p>
+                    <div class="certificate-meta">
+                        <span><i class="fas fa-calendar"></i> April 2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="certificate-image">
+                    <img src="imgSrc/csr1.png" alt="Certificate 2">
+                    <div class="certificate-overlay">
+                        <a href="https://coursera.org/share/97a925c3b96334da6e30e87bf626e565" class="view-certificate" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="certificate-content">
+                    <h3>Amazon Junior Software Developer</h3>
+                    <p>Java Web Full-Stack (Java, HTML/CSS)</p>
+                    <div class="certificate-meta">
+                        <span><i class="fas fa-calendar"></i> January 2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="certificate-image">
+                    <img src="imgSrc/csr2.png" alt="Certificate 3">
+                    <div class="certificate-overlay">
+                        <a href="https://coursera.org/share/75309687663a6c5f39bc768f33ff3b11" class="view-certificate" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="certificate-content">
+                    <h3>Software Development Lifecycle</h3>
+                    <p>Software Development Process – Agile, SDLC, DevOps</p>
+                    <div class="certificate-meta">
+                        <span><i class="fas fa-calendar"></i> January 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info-side">
+                <h2>Contact Me</h2>
+                <p class="contact-subtitle">Let's work together! Feel free to reach out to me.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="item-info">
+                            <h3>Email</h3>
+                            <p>laml33366@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="item-info">
+                            <h3>Phone</h3>
+                            <p>098 152 7076</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/lamgia20" target="_blank" class="social-link glow-effect">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/lam.luonggia/" class="social-link glow-effect" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/LGL-aml" class="social-link glow-effect" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="pdfSrc/SE181852_LUONGGIALAM.pdf" class="cv-button" download>
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a>
+            </div>
+
+            <div class="contact-form-side">
+                <form  name="submit-to-google-sheet">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="Message" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://www.facebook.com/lamgia20" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/lam.luonggia/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/LGL-aml" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Lam Gia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="success-popup" id="successPopup">
+        <div class="popup-content">
+            <div class="popup-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. I'll get back to you soon!</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 
