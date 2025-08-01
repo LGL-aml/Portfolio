@@ -49,8 +49,30 @@ header {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--accent-color);
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.logo::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.logo:hover {
+    color: var(--white);
+    text-shadow: 0 0 10px rgba(64, 169, 255, 0.5);
+}
+
+.logo:hover::after {
+    width: 100%;
 }
 
 .nav-links {
@@ -172,6 +194,7 @@ h2::after {
     width: fit-content;
     overflow: visible;
     cursor: pointer;
+    animation: initialLoad 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 .role::after {
@@ -191,7 +214,6 @@ h2::after {
     box-shadow: 0 0 10px rgba(64, 169, 255, 0.5);
     transform-origin: left;
     transform: scaleX(0);
-    transition: transform 0.3s ease;
 }
 
 .role::before {
@@ -212,6 +234,65 @@ h2::after {
     pointer-events: none;
 }
 
+.role.animate::after {
+    animation: underline-animation 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.role.animate::before {
+    animation: shimmer 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation-delay: 0.3s;
+}
+
+.role:hover::after {
+    animation: underline-animation 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.role:hover::before {
+    animation: shimmer 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes initialLoad {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes underline-animation {
+    0% {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(235%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(235%);
+        opacity: 0;
+    }
+}
+
+/* Hover effects */
 .role:hover::after {
     animation: underline-animation 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
@@ -224,9 +305,11 @@ h2::after {
 @keyframes underline-animation {
     0% {
         transform: scaleX(0);
+        opacity: 0;
     }
     100% {
         transform: scaleX(1);
+        opacity: 1;
     }
 }
 
