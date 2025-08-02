@@ -515,7 +515,6 @@ h2::after {
 /* Typing Animation */
 .typing-text {
     display: inline-block;
-    min-width: 10ch;
     color: var(--accent-color);
 }
 
