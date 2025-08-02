@@ -253,13 +253,13 @@ h2::after {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .home-content {
     flex: 1;
     text-align: left;
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 
 .greeting {
@@ -1316,6 +1316,18 @@ h2::after {
 }
 
 .skill-item:hover i {
+    transform: scale(1.2) rotate(360deg);
+}
+
+.skill-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Optional: hiệu ứng hover giống icon */
+.skill-item:hover .skill-logo {
     transform: scale(1.2) rotate(360deg);
 }
 
