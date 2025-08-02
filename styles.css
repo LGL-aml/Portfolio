@@ -1460,7 +1460,7 @@ h2::after {
     color: var(--light-blue);
     font-size: 0.9rem;
     line-height: 1.5;
-    text-align: justify;
+    text-align: left;
     word-spacing: normal;
 }
 
