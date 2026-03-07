@@ -2,9 +2,31 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "LamGia's Portfolio",
-  description:
-    "Passionate about creating efficient and scalable backend solutions with expertise in Java, Spring Boot, and database management.",
+  title: "Lam Gia | Software Engineer Portfolio",
+  description: "Portfolio của Lam Gia - Software Engineer chuyên về React, Next.js, Spring Boot và AI applications.",
+  keywords: [
+    "Lam Gia",
+    "Lam Gia Developer",
+    "Portfolio Lam Gia",
+    "React Developer Vietnam",
+    "Next.js Developer"
+  ],
+  authors: [{ name: "Lam Gia" }],
+  creator: "Lam Gia",
+  metadataBase: new URL("https://lamgia.id.vn"),
+
+  openGraph: {
+    title: "Lam Gia Portfolio",
+    description: "Software Engineer Portfolio - React, Next.js, Spring Boot",
+    url: "https://lamgia.id.vn",
+    siteName: "Lam Gia Portfolio",
+    type: "website",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 export default function RootLayout({
