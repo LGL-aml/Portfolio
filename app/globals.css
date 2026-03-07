@@ -1752,7 +1752,7 @@ h2::after {
     color: var(--light-blue);
     font-size: 0.9rem;
     line-height: 1.5;
-    text-align: justify;
+    text-align: left;
     word-spacing: normal;
 }
 
@@ -2186,6 +2186,10 @@ h2::after {
         visibility: hidden;
     }
 
+    :root.light .nav-links {
+        background: rgba(244, 249, 255, 0.98);
+    }
+
     .nav-links.active {
         top: 0;
         opacity: 1;
@@ -2209,6 +2213,10 @@ h2::after {
 
     .nav-links a:hover {
         background: rgba(64, 169, 255, 0.2);
+    }
+
+    :root.light .nav-links a:hover {
+        background: rgba(33, 150, 243, 0.15);
     }
 
     .nav-links a:nth-child(1) {
@@ -2296,6 +2304,11 @@ h2::after {
         backdrop-filter: blur(10px);
         z-index: 998;
         padding: 1rem 5%;
+    }
+
+    :root.light .navbar {
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 2px 10px rgba(33, 150, 243, 0.1);
     }
 
     .home-section {
@@ -2520,6 +2533,10 @@ h2::after {
         background: var(--white);
         position: absolute;
         transition: 0.3s ease;
+    }
+
+    :root.light .menu-btn span {
+        background: #0a2540;
     }
 
     .menu-btn span:nth-child(1) {
