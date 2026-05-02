@@ -101,12 +101,12 @@ export default function HomeSection() {
               <i className="fab fa-facebook"></i>
             </a>
             <a
-              href="https://www.instagram.com/lam.luonggia/"
+              href="https://www.linkedin.com/in/lamgia/"
               className="social-link glow-effect"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-instagram"></i>
+              <i className="fab fa-linkedin"></i>
             </a>
             <a
               href="https://github.com/LGL-aml"
